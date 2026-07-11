@@ -24,7 +24,7 @@ ul{
 }
 li a{
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     font-weight: 600;
     
@@ -51,4 +51,27 @@ nav a.active{
     font-weight: bold;
     border-bottom: 2px solid red;
    
+}
+.hero{
+    height: 90vh;
+    background-image: url("/images/FastFood.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.hero button:hover{
+    background: black;
+    color: aquamarine;
 }
