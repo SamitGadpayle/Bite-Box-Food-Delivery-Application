@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "playfair display", sans-serif;
+}
+
+nav{
+    padding: 20px 40px 20px 40px;
+    background-color: cornflowerblue;
+    color: white;
+   
+}
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+
+}
+li a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+nav a:hover{
+    color: red;
+    background-color: yellow;
+    
+}
+nav li:last-child a{
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+
+}
+nav li:last-child a:hover{
+    background: red;
+    color: yellow;
+
+}
+nav a.active{
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+.menu h2{
+    text-align: center;
+    font-weight: 900;
+    color: red;
+    padding-top: 10px;
+}
+.card{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgb(0, 0,0, 0.1);
+}
+.card img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+
+}
+.card button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    
+}.card button:hover{
+    background: black;
+    color: aqua;
+    font-weight: 700;
+}
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.category-icons{
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    overflow: auto;
+    background: white;
+    justify-content: center;
+}
+.icon-box{
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer
+    transition: 0.3em;
+}    
+.icon-box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+   object-fit: cover;
+   box-shadow: 0 4px 6px black;
+   margin-bottom: 15px;
+   padding: 5px;
+   border-color: black;
+}
+.icon-box p{
+    /* margin-top: 8px; */
+    font-size: 14px;
+    font-weight: 700;
+}
+.icon-box img:hover{
+    border-color:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.icon-box p:hover{
+    color: red;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
