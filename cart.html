@@ -4,8 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="cart.css"/>
+    <script
+      src="https://kit.fontawesome.com/efd872f22e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cart</h1>
+    
+    <!-- Header Section-->
+    <header>
+      <nav>
+        <div>
+          <!-- Logo -->
+          <!-- <h2>Bite<span style="color: red">Box</span></h2> -->
+           <img src="/images/Minimalist Black Meal Box Logo.png" alt="logo" width="180px">
+
+          <!-- Menu -->
+          <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="bitedeals.html">BiteDeals</a></li>
+            <li><a href="cart.html">Cart<i class="fa-solid fa-cart-arrow-down"></i></a></li>
+            <li><a href="login.html">Login<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header section completed -->
+    
+    <!-- Cart section -->
+    <section class="cart">
+    <table border="2">
+      <thead>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Remove</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="item">
+            <img src="/images/burgerimage.jpg" alt="image" height="200px" width="200px">
+            <div>
+              <h4>Burger</h4>
+              <p>Chessy grilled burger with juciy meat.</p>
+            </div>
+          </td>
+
+          <td>₹99</td>
+          <td>
+            <div class="quantity-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+
+          <td>₹99</td>
+          <td>
+            <button class="remove">X</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <img src="/images/pizzaimage.jpg" alt="image" height="200px" width="200px">
+            <div>
+              <h4>Pizza</h4>
+              <p>Highlighting signature crusts, premium cheese blends, and fresh local toppings.</p>
+            </div>
+          </td>
+
+          <td>₹199</td>
+          <td>
+            <div class="quantity-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+
+          <td>₹199</td>
+          <td>
+            <button class="remove">X</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <img src="/images/bitiyaniimage.jpg" alt="image" height="200px" width="200px">
+            <div>
+              <h4>Biriyani</h4>
+              <p> A vibrant medley of seasonal vegetables and cottage cheese (paneer), cooked with aromatic spices, mint, and long-grain basmati rice.</p>
+            </div>
+          </td>
+
+          <td>₹200</td>
+          <td>
+            <div class="quantity-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+
+          <td>₹200</td>
+          <td>
+            <button class="remove">X</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <img src="/images/cokeimage.jpg" alt="image" height="200px" width="200px">
+            <div>
+              <h4>Coke</h4>
+              <p>Chilled icy canned drink</p>
+            </div>
+          </td>
+
+          <td>₹49</td>
+          <td>
+            <div class="quantity-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </td>
+
+          <td>₹49</td>
+          <td>
+            <button class="remove">X</button>
+          </td>
+        </tr>
+
+
+        <tr class="grand-total">
+          <td colspan="3">Grand Total</td>
+          <td>₹447 + 18%GST</td>
+          <td><button>Proceed</button></td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+
+    </section>
 </body>
 </html>
