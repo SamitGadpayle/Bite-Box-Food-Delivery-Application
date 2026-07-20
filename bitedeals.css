@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "playfair display", sans-serif;
+}
+header{
+    position: sticky;
+}
+
+nav{
+    padding: 20px 40px 20px 40px;
+    background-color: cornflowerblue;
+    color: white;
+   
+}
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+
+}
+li a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+nav a:hover{
+    color: red;
+    background-color: yellow;
+    
+}
+nav li:last-child a{
+    background-color: red;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+nav li:last-child a:hover{
+    background: red;
+    color: yellow;
+}
+
+nav a.active{
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+
+/* bitedeals */
+.deals-page{
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.deals-page .deal-hero{
+    /* background: linear-gradient(135deg, #000, #202020); */
+    background: red;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    /* margin-bottom: 40px; */
+}
+
+.deal-hero h1{
+    font-size: 40px;
+}
+
+.deal-hero p{
+    font-size: 18px;
+}
+
+/* deals page */
+.combo-section .section-title{
+    margin: 30px 0 20px;
+    font-size: 28px;
+    color: black;
+}
+
+.combo-section{
+    padding: 40px;
+    background: white;
+}
+
+.combo-section .combo-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.combo-container .combo-card{
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border: solid red;
+}
+
+.combo-container .combo-card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.combo-container .combo-card h4{
+    margin: 10px 0;
+}
+
+.combo-container .combo-card h4 span{
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.combo-container .combo-card button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.combo-container .combo-card button:hover{
+    background-color: black;
+    color: aqua;
+}
+
+.combo-container .combo-card:hover{
+    transform: translateY(-8px);
+}
