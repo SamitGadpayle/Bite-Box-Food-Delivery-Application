@@ -140,3 +140,48 @@ nav a.active{
 .combo-container .combo-card:hover{
     transform: translateY(-8px);
 }
+
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.deal-card{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.deal-card h3{
+    margin-bottom: 10px;
+}
+
+.deal-card span{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.deal-card:hover{
+    transform: translateY(-8px);
+    background: orange;
+}
+
+.red{
+    border-top: 5px solid red;
+}
+
+.blue{
+    border-top: 5px solid blue;
+}
+
+.green{
+    border-top: 5px solid chartreuse;
+}
